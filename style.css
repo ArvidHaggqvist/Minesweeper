@@ -1,0 +1,73 @@
+.game {
+	width: 600px;
+	margin: auto;
+	overflow: hidden;
+}
+.square {
+	width: 56px;
+	height: 56px;
+	float: left;
+	border: 2px solid;
+	border-top-color: white;
+	border-left-color: white;
+	border-right-color: #333;
+	border-bottom-color: #333;
+	background: #ccc;
+	background-size: 60%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.square span {
+	position: absolute;
+	width: 56px;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	left: 0;
+	top: 8px;
+}
+/*.bomb {
+	background: black;
+}*/
+.bomb {
+	background-size: 60%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+body {
+	position: relative;
+	overflow: hidden;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	background: rgba(0,0,0,0.8);
+	display: none;
+}
+.gameend {
+	position: absolute;
+  	left: 0;
+  	top: 200px;
+  	font-family: helvetica;
+  	text-transform: uppercase;
+  	text-align: center;
+  	width: 100%;
+  	z-index: 10;
+  	color: red;
+	/*animation-duration: 1s;
+  	animation-name: size;*/
+}
+
+/* This animation was lagging so I had to do it through javascript instead */
+
+/*@keyframes size {
+  from {
+    font-size: 400px; 
+  }
+  to {
+    font-size: 80px;
+  }
+}*/
